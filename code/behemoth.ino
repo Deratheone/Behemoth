@@ -2,7 +2,7 @@
 #include <ESPAsyncWebServer.h>
 #include <Preferences.h>  // For persistent storage
 #include <time.h>
-#include <ESP32Servo.h>  // Add this with your other libraries
+#include <ESP32Servo.h>
 
 // WiFi credentials for AP mode
 const char* ssid = "BEHEMOTH_AP";
@@ -71,7 +71,7 @@ bool trayEndAlertActive = false;     // Flag for tray end alert
 // Function prototype for updateElapsedTime
 void updateElapsedTime();
 
-// HTML content (your provided website with modifications)
+// HTML content
 const char index_html[] PROGMEM = R"rawliteral(<!DOCTYPE html>
 <html lang="en">
 <head>
